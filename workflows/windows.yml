@@ -92,7 +92,7 @@ jobs:
           echo vcToolsRedistDir=%VCToolsRedistDir% >> %GITHUB_ENV%
       # 打包 
       - name: package
-        id: package      
+        id: package
         env:
           archiveName: ${{ matrix.qt_ver }}-${{ matrix.qt_target }}-${{ matrix.qt_arch }}
           msvcArch: ${{ matrix.msvc_arch }}          
